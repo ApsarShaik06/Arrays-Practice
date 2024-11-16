@@ -5,7 +5,8 @@ public class PairsInArray {
     public static void printPairs(int[] nums) {
         int n = nums.length;
 
-        for (int i=0; i<=n-2; i++) {
+        //for (int i=0; i<=n-2; i++) { we can use this as well instead of below line.
+        for (int i=0; i<n; i++) {
             for(int j=i+1; j<n; j++){
                 System.out.print("("+nums[i]+","+nums[j]+") ");
             }
